@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    scroll-behavior: smooth;
+}
+
+span{
+    cursor: text;
+}
+
+p{
+    cursor: text;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(to right, red, crimson, crimson, red);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0 1vw;
+    color: white;
+    cursor: pointer;
+    font-size: 2vw;
+}
+
+#foodLogo{
+    width: 10vw;
+    padding: 1%;
+}
+
+ul li a:hover{
+    border-bottom: 1.5px solid black;
+    transition: border 1s ease;
+}
+
+
+
+#menuLogo{
+    width: 10vw;
+    height: 10vw;
+    background: linear-gradient(45deg, crimson, red);
+    cursor: pointer;
+    position: relative;
+    display: none;
+}
+
+.bars{
+    width: 50%;
+    height: 5%;
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+}
+
+.bars:nth-child(1){
+    top: 33%;
+}
+
+.bars:nth-child(3){
+    top: 66%;
+}
+
+.bars:nth-child(4){
+    top: 33%;
+}
+
+.bars:nth-child(6){
+    top: 66%;
+}
+
+
+
+#siteDescription{
+    width: 100%;
+    background-image: url("images/bg.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+}
+
+#siteDescription:hover{
+    background: black;
+    color: white;
+    font-weight: bolder;
+    transition: all 1s ease;
+}
+
+#orderNow{
+    margin-bottom: 1%;
+    background: linear-gradient(to right,red,orange,crimson);
+    font-size: 2vw;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1%;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    outline: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+#ourServicesDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#ourServiceDetailsHeading{
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1% 0;
+}
+
+#ourServiceDetailsContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ourServiceDetailsContentHeart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.ourServiceDetailsContentHeartImage{
+    width: 30vw;
+    border-radius: 15px;
+}
+
+.ourServiceDetailsContentHeartTitle{
+    font-size: 3vw;
+    font-weight: bolder;
+    margin-top: 2%;
+    text-decoration: underline solid red;
+}
+
+.ourServiceDetailsContentHeartPara{
+    margin: 3% 5%;
+    font-size: 1.8vw;
+    text-align: center;
+    background: linear-gradient(to right, red, crimson, crimson, red);
+    color: white;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1.5%;
+}
+
+.ourServiceDetailsContentHeart:nth-child(1){
+    border-right: 2px dashed black;
+}
+.ourServiceDetailsContentHeart:nth-child(2){
+    border-left: 2px dashed black;
+}
+.ourServiceDetailsContentHeart:nth-child(2){
+    border-right: 2px dashed black;
+}
+.ourServiceDetailsContentHeart:nth-child(3){
+    border-left: 2px dashed black;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+#ourClientsDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#ourClientsDetailsHeart{
+    width: 100%;
+    height: 80vh;
+    background-image: url('images/clients.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-position: center;
+    background-size: cover;
+}
+
+#ourClientsDetailsHeading{
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1% 0;
+}
+
+.ourClientsDetailsHeartImage{
+    width: 15%;
+}
+
+.ourClientsDetailsHeartImage:nth-child(3){
+    width: 25%;
+}
+
+.ourClientsDetailsHeartImage:nth-child(4){
+    width: 22%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#feedbackDetailsHeading{
+    width: 100%;
+    font-size: 5vw;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1% 0;
+}
+
+#feebackDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#feedbackForm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url("images/contact.jpg");
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.textBoxes{
+    padding: 2%;
+    font-size: 2vw;
+    width: 40vw;
+    margin: 1% 0;
+    outline-color: white;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+}
+
+.textBoxes::placeholder{
+    color: black;
+}
+
+.textBoxes:focus::placeholder{
+    color: black;
+}
+
+.textBoxes:focus{
+    background: white;
+    width: 50vw;
+    transition: all 0.8s ease;
+}
+
+.textArea{
+    padding: 2%;
+    font-size: 2vw;
+    width: 40vw;
+    margin: 1% 0;
+    outline-color: white;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    height: 10vh;
+    resize: none;
+    border-radius: 20px;
+}
+
+.textArea::placeholder{
+    color: black;
+}
+
+.textArea:focus::placeholder{
+    color: black;
+}
+
+.textArea:focus{
+    background: white;
+    width: 50vw;
+    transition: all 0.8s ease;
+}
+
+#submit{
+    width: 20vw;
+    padding: 1%;
+    font-weight: bolder;
+    font-size: 2vw;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg,rgb(192, 1, 192),rgb(71, 58, 247));
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:400px){
+    #ourServiceDetailsContent{
+        flex-direction: column;
+    }
+
+    .ourServiceDetailsContentHeartPara{
+        width: 50vw;
+    }
+
+    .ourServiceDetailsContentHeart:nth-child(1){
+        border-right: 0;
+    }
+    .ourServiceDetailsContentHeart:nth-child(2){
+        border-left: 0;
+    }
+    .ourServiceDetailsContentHeart:nth-child(2){
+        border-right: 0;
+    }
+    .ourServiceDetailsContentHeart:nth-child(3){
+        border-left: 0;
+    }
+
+    .ourServiceDetailsContentHeart:nth-child(1){
+        margin-top: 10%;
+    }
+    .ourServiceDetailsContentHeart:nth-child(2){
+        margin-top: 10%;
+    }
+    .ourServiceDetailsContentHeart:nth-child(3){
+        margin-top: 10%;
+    }
+
+    #ourClientsDetailsHeading{
+        margin-top: 5%;
+    }
+
+    #ourClientsDetailsHeart{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    nav{
+        flex-direction: column;
+        height: 6vh;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+
+    #menuLogo{
+        display: inherit;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #foodLogo{
+        margin-bottom: 1.5vh;
+    }
+
+    ul{
+        flex-direction: column;
+        margin-bottom: 1vh;
+    }
+}
