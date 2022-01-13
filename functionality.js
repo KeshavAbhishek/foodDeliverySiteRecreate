@@ -3,7 +3,7 @@
 document.getElementById('menuLogo').addEventListener('mousedown',()=>{
     if(document.getElementById('navbar').style.height=='6vh'){
 
-        document.getElementById('navbar').style.height='15vh';
+        document.getElementById('navbar').style.height='16vh';
 
         document.getElementById('bar-1').style.transform='rotate(45deg)';
         document.getElementById('bar-1').style.left='7%';
@@ -24,7 +24,7 @@ document.getElementById('menuLogo').addEventListener('mousedown',()=>{
         document.getElementById('bar-6').style.transition='all 0.5s ease';
     }
     else{
-        if(document.getElementById('navbar').style.height='15vh'){
+        if(document.getElementById('navbar').style.height='16vh'){
 
             document.getElementById('navbar').style.height='6vh';
 
