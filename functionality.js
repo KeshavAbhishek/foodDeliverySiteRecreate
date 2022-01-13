@@ -1,4 +1,4 @@
-document.getElementById('navbar').style.height='6vh';
+// document.getElementById('navbar').style.height='6vh';
 
 document.getElementById('menuLogo').addEventListener('mousedown',()=>{
     if(document.getElementById('navbar').style.height=='6vh'){
