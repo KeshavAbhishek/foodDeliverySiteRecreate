@@ -334,6 +334,10 @@ ul li a:hover{
         flex-direction: column;
     }
 
+    #unorderedList li{
+        margin: 2% 0;
+    }
+
     /* .ourServiceDetailsContentHeartPara{
         width: 50vw;
     } */
@@ -417,12 +421,12 @@ ul li a:hover{
         height: 45px;
     }
     100%{
-        height: 150px;
+        height: 170px;
     }
 }
 @keyframes navAnimatorRemove {
     0%{
-        height: 150px;
+        height: 170px;
     }
     100%{
         height: 45px;
