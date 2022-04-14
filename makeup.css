@@ -50,9 +50,8 @@ ul li:hover{
 
 ul li a{
     text-decoration: none;
-    padding: 0 1vw;
     cursor: pointer;
-    font-size: 2pc;
+    font-size: 2vw;
 }
 
 #foodLogo{
@@ -391,6 +390,10 @@ ul li a{
         flex-direction: column;
     }
 
+    ul{
+        justify-content: unset;
+    }
+
     ul li{
         background: none;
         border-radius: none;
@@ -452,6 +455,34 @@ ul li a{
         width: 15vw;
         height: 15vw;
         margin-bottom: 1.25%;
+    }
+
+    .links:nth-child(1)::before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f015"; font-size: 1.8pc;
+        position: absolute;
+        left: 10%;
+        color: gold;
+    }
+    .links:nth-child(1) a{
+        color: gold;
+    }
+    .links:nth-child(2)::before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f562"; font-size: 1.8pc;
+        position: absolute;
+        left: 10%;
+        color: white;
+    }
+    .links:nth-child(3)::before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\e592"; font-size: 1.8pc;
+        position: absolute;
+        left: 10%;
+        color: white;
+    }
+    .links:nth-child(4)::before{
+        font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f15c"; font-size: 1.8pc;
+        position: absolute;
+        left: 12%;
+        color: white;
     }
 }
 
