@@ -11,49 +11,54 @@ span{
     cursor: text;
 }
 
-p{
-    cursor: text;
-    visibility: collapse;
-    font-weight: normal;
+img{
+    cursor: pointer;
 }
 
 #navbar{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     background: linear-gradient(to right, red, crimson, crimson, red);
+    position: relative;
 }
 
 ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 ul li{
     list-style: none;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 1.25% 3%;
+}
+
+ul li a{
+    color: white;
+}
+
+ul li:hover{
+    background: rgba(220, 20, 60, 0.8);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
 }
 
 ul li a{
     text-decoration: none;
     padding: 0 1vw;
-    color: white;
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 2pc;
 }
 
 #foodLogo{
     width: 10vw;
     padding: 1%;
 }
-
-ul li a:hover{
-    border-bottom: 1.5px solid black;
-    transition: border 1s ease;
-}
-
-
 
 #menuLogo{
     width: 8vw;
@@ -334,10 +339,6 @@ ul li a:hover{
         flex-direction: column;
     }
 
-    #unorderedList li{
-        margin: 2% 0;
-    }
-
     /* .ourServiceDetailsContentHeartPara{
         width: 50vw;
     } */
@@ -385,30 +386,72 @@ ul li a:hover{
     }
 
     nav{
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        height: 45px;
-        justify-content: space-around;
+    }
+
+    ul li{
+        background: none;
+        border-radius: none;
+        padding: none;
+    }
+
+    ul li a:hover{
+        color: gold;
+        font-weight: bolder;
+    }
+
+    #siteDescription{
+        position: relative;
+    }
+
+    #foodLogo{
+        width: 20vw;
+        margin-bottom: 1.25%;
+    }
+
+    #siteDescription{
+        height: 25vh;
+    }
+
+    /* @keyframes heightManagers {
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 25vh;
+        }
+    }
+
+    .animateMenu{
+        animation: heightManagers 2s ease-in-out infinite;
+        animation-direction: alternate;
+    } */
+
+    ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 0vh;
+        background: linear-gradient(to right, red, crimson, crimson, red);
         overflow: hidden;
+        flex-direction: column;
     }
 
     ul li a{
-        font-size: 1.25pc;
+        font-size: 2pc;
     }
 
     #menuLogo{
         display: inherit;
         position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    #foodLogo{
-        margin-bottom: 1.5vh;
-    }
-
-    ul{
-        flex-direction: column;
-        margin-bottom: 1vh;
+        right: 0 !important;
+        top: 0 !important;
+        width: 15vw;
+        height: 15vw;
+        margin-bottom: 1.25%;
     }
 }
 
@@ -418,26 +461,26 @@ ul li a:hover{
 
 @keyframes navAnimator {
     0%{
-        height: 45px;
+        height: 0px;
     }
     100%{
-        height: 170px;
+        height: 25vh;
     }
 }
 @keyframes navAnimatorRemove {
     0%{
-        height: 170px;
+        height: 25vh;
     }
     100%{
-        height: 45px;
+        height: 0;
     }
 }
 
 .navcss{
-    animation: navAnimator 0.5s ease-in-out 1;
+    animation: navAnimator 0.3s ease-in-out 1;
     animation-fill-mode: forwards;
 }
 .navcssRemove{
-    animation: navAnimatorRemove 0.5s ease-in-out 1;
+    animation: navAnimatorRemove 0.3s ease-in-out 1;
     animation-fill-mode: forwards;
 }
