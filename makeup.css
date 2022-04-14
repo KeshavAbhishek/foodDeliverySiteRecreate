@@ -13,6 +13,8 @@ span{
 
 p{
     cursor: text;
+    visibility: collapse;
+    font-weight: normal;
 }
 
 #navbar{
@@ -56,6 +58,7 @@ ul li a:hover{
 #menuLogo{
     width: 8vw;
     height: 8vw;
+    background: transparent !important;
     background: linear-gradient(45deg, crimson, red);
     cursor: pointer;
     position: relative;
@@ -92,34 +95,47 @@ ul li a:hover{
 
 #siteDescription{
     width: 100%;
+    height: 50vh;
     background-image: url("images/bg.jpg");
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     background-position: center;
     background-size: cover;
-}
-
-#siteDescription:hover{
-    background: black;
-    color: white;
-    font-weight: bolder;
-    transition: all 0.5s ease;
+    position: relative;
 }
 
 #orderNow{
     margin-bottom: 1%;
     background: linear-gradient(to right,red,orange,crimson);
-    font-size: 2vw;
+    font-size: 3pc;
     font-family: 'Times New Roman', Times, serif;
-    padding: 1%;
+    padding: 1% 5%;
     color: white;
     font-weight: 600;
     border: 0;
     outline: 0;
     border-radius: 50px;
     cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+}
+
+.ourServiceDetailsContentHeart{
+    margin-bottom: 5%;
+}
+
+.ourServiceDetailsContentHeartPara{
+    border-radius: 15px;
+}
+
+.ourServiceDetailsContentHeartTitle{
+    margin-bottom: 5%;
+}
+
+.ourServiceDetailsContentHeartImage{
+    margin-bottom: 5%;
 }
 
 
@@ -173,24 +189,8 @@ ul li a:hover{
     background: linear-gradient(to right, red, crimson, crimson, red);
     color: white;
     font-weight: 600;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     padding: 1.5%;
 }
-
-.ourServiceDetailsContentHeart:nth-child(1){
-    border-right: 2px dashed black;
-}
-.ourServiceDetailsContentHeart:nth-child(2){
-    border-left: 2px dashed black;
-}
-.ourServiceDetailsContentHeart:nth-child(2){
-    border-right: 2px dashed black;
-}
-.ourServiceDetailsContentHeart:nth-child(3){
-    border-left: 2px dashed black;
-}
-
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -334,36 +334,46 @@ ul li a:hover{
         flex-direction: column;
     }
 
-    .ourServiceDetailsContentHeartPara{
+    /* .ourServiceDetailsContentHeartPara{
         width: 50vw;
+    } */
+
+    .ourServiceDetailsContentHeartImage{
+        width: 80vw;
     }
 
-    .ourServiceDetailsContentHeart:nth-child(1){
-        border-right: 0;
-    }
-    .ourServiceDetailsContentHeart:nth-child(2){
-        border-left: 0;
-    }
-    .ourServiceDetailsContentHeart:nth-child(2){
-        border-right: 0;
-    }
-    .ourServiceDetailsContentHeart:nth-child(3){
-        border-left: 0;
+    .ourServiceDetailsContentHeartTitle{
+        font-size: 2pc;
     }
 
-    .ourServiceDetailsContentHeart:nth-child(1){
-        margin-top: 10%;
+    .ourServiceDetailsContentHeartPara{
+        font-size: 1.25pc;
     }
-    .ourServiceDetailsContentHeart:nth-child(2){
-        margin-top: 10%;
+
+    .ourServiceDetailsContentHeart span{
+        width: 80vw;
+        text-align: center;
     }
-    .ourServiceDetailsContentHeart:nth-child(3){
-        margin-top: 10%;
+
+    #ourServicesDetails #ourServiceDetailsHeading,#ourClientsDetailsHeading,#feedbackDetailsHeading{
+        font-size: 3pc;
+        margin: 5% 0;
+    }
+
+    #feedbackForm input{
+        width: 70%;
+    }
+    #feedbackForm textarea{
+        width: 70%;
+    }
+    #feedbackForm button{
+        width: 50%;
     }
 
     #ourClientsDetailsHeading{
         margin-top: 5%;
     }
+
 
     #ourClientsDetailsHeart{
         flex-direction: column;
@@ -372,14 +382,13 @@ ul li a:hover{
 
     nav{
         flex-direction: column;
-        height: auto;
-        /* height: auto !important; */
+        height: 45px;
         justify-content: space-around;
         overflow: hidden;
     }
 
-    #unorderedList{
-        display: none;
+    ul li a{
+        font-size: 1.25pc;
     }
 
     #menuLogo{
@@ -397,4 +406,34 @@ ul li a:hover{
         flex-direction: column;
         margin-bottom: 1vh;
     }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes navAnimator {
+    0%{
+        height: 45px;
+    }
+    100%{
+        height: 150px;
+    }
+}
+@keyframes navAnimatorRemove {
+    0%{
+        height: 150px;
+    }
+    100%{
+        height: 45px;
+    }
+}
+
+.navcss{
+    animation: navAnimator 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+.navcssRemove{
+    animation: navAnimatorRemove 0.5s ease-in-out 1;
+    animation-fill-mode: forwards;
 }

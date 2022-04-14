@@ -4,6 +4,8 @@ document.getElementById('navbar').style.overflow='hidden';
 document.getElementById('menuLogo').addEventListener('mousedown',()=>{
     if(document.getElementById('navbar').style.overflow=='hidden'){
 
+        document.getElementById('navbar').classList.add('navcss');
+
         document.getElementById('navbar').style.overflow='visible';
         document.getElementById('unorderedList').style.display='flex';
 
